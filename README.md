@@ -1,1 +1,1 @@
-# dots
+# Sikko's Fedora dots + configs
