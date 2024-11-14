@@ -27,6 +27,7 @@ I was too lazy to make a wiki, so here's some of the details you need to know.
 - system font? [`Inter`](https://github.com/rsms/inter/)
 - terminal font? [`MesloLGS NF`](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
 - hotel? [`trivago`](https://www.trivago.com/)
+- my favourite color? ![#abc5ae](https://placehold.co/15/abc5ae/abc5ae?text=+) `#abc5ae`
 
 ## TODO
 
