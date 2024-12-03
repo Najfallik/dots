@@ -24,6 +24,7 @@ I was too lazy to make a wiki, so here's some of the details you need to know.
 - desktop? [`Gnome`](https://www.gnome.org/) with [`Pop tiling shell`](https://github.com/pop-os/shell)
 - web browser? [`firefox`](https://www.mozilla.org/) with a custom css
 - terminal? [`kitty`](https://github.com/kovidgoyal/kitty)
+- shell? [`zsh`](https://www.zsh.org/) with [`ohmyzsh`](https://github.com/ohmyzsh/ohmyzsh)
 - system font? [`Inter`](https://github.com/rsms/inter/)
 - terminal font? [`MesloLGS NF`](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
 - my favourite color? ![`#abc5ae`](https://placehold.co/15/abc5ae/abc5ae?text=+)
