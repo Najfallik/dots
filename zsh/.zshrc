@@ -62,8 +62,11 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias ff='fastfetch'
 alias q='exit'
-alias update='./github/dots/scripts/update.sh'
+alias update='~/github/dots/scripts/update.sh'
 
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+export PATH=$PATH:/usr/local/go/bin
+
