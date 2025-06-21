@@ -20,11 +20,11 @@ I was too lazy to make a wiki, so here's some of the details you need to know.
 
 ### What I use
 
-- distribution? [`Fedora`](https://fedoraproject.org/)
-- desktop? [`Gnome`](https://www.gnome.org/) with [`Pop tiling shell`](https://github.com/pop-os/shell)
+- distribution? [`CachyOS`](https://cachyos.org/)
+- desktop? [`Hyprland`](https://hypr.land/)
 - web browser? [`firefox`](https://www.mozilla.org/) with a custom css
-- terminal? [`kitty`](https://github.com/kovidgoyal/kitty)
-- shell? [`zsh`](https://www.zsh.org/) with [`ohmyzsh`](https://github.com/ohmyzsh/ohmyzsh)
+- terminal? [`alacritty`](https://alacritty.org/)
+- shell? [`fish`](https://fishshell.com/) with cachyos default [`config`](https://github.com/CachyOS/cachyos-fish-config)
 - system font? [`Inter`](https://github.com/rsms/inter/)
 - terminal font? [`MesloLGS NF`](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
 - my favourite color? ![`#abc5ae`](https://placehold.co/15/abc5ae/abc5ae?text=+)
@@ -34,7 +34,7 @@ I was too lazy to make a wiki, so here's some of the details you need to know.
 
 My TODOs or roadmap for my gnome.
 
-- [x] clean kitty config <sup>needs big time improvement</sup>
+- [x] make a new alacritty config
 - [x] upload the rest of the configs
 - [x] Do math
 - [x] is anyone even reading this?
