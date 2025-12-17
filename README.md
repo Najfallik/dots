@@ -21,7 +21,7 @@ I was too lazy to make a wiki, so here's some of the details you need to know.
 ### What I use
 
 - distribution? [`CachyOS`](https://cachyos.org/)
-- desktop? [`Hyprland`](https://hypr.land/)
+- desktop? [`KDE Plasma`](https://kde.org/plasma-desktop/)
 - web browser? [`firefox`](https://www.mozilla.org/) with a custom css
 - terminal? [`alacritty`](https://alacritty.org/)
 - shell? [`fish`](https://fishshell.com/) with cachyos default [`config`](https://github.com/CachyOS/cachyos-fish-config)
@@ -32,7 +32,7 @@ I was too lazy to make a wiki, so here's some of the details you need to know.
 
 ## TODO
 
-My TODOs or roadmap for my gnome.
+My TODOs or roadmap:
 
 - [x] make a new alacritty config
 - [x] upload the rest of the configs
