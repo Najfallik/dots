@@ -1,0 +1,72 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+background        = "#282a36"
+foreground        = "#f0ead6"   # warm vanilla — replaces stark white
+bright_foreground = "#f5f0e8"   # soft cream — replaces pure #ffffff
+
+[colors.cursor]
+text   = "#282a36"
+cursor = "#c9a8e0"   # lavender cursor instead of plain white
+
+[colors.vi_mode_cursor]
+text   = "CellBackground"
+cursor = "CellForeground"
+
+[colors.selection]
+text       = "CellForeground"
+background = "#44475a"
+
+[colors.search.matches]
+foreground = "#282a36"
+background = "#a8c0b0"   # muted sage instead of neon green
+
+[colors.search.focused_match]
+foreground = "#282a36"
+background = "#c8b890"   # warm vanilla-amber instead of neon orange
+
+[colors.footer_bar]
+background = "#282a36"
+foreground = "#f0ead6"   # vanilla
+
+[colors.hints.start]
+foreground = "#282a36"
+background = "#e0d8c0"   # vanilla hint background
+
+[colors.hints.end]
+foreground = "#e0d8c0"
+background = "#282a36"
+
+# Normal (standard) ANSI colours — softened with vanilla & lavender
+[colors.normal]
+black   = "#21222c"
+red     = "#c97878"   # muted rose  (was neon #ff5555)
+green   = "#a0b89a"   # dusty sage  (was neon #50fa7b)
+yellow  = "#d4c99a"   # warm vanilla  (was neon #f1fa8c)
+blue    = "#a89bd4"   # soft lavender  (was vivid #bd93f9)
+magenta = "#c9a8e0"   # pale lavender-pink  (was hot #ff79c6)
+cyan    = "#96b8d4"   # lavender-blue  (was electric #8be9fd)
+white   = "#f0ead6"   # vanilla white  (was #f8f8f2)
+
+# Bright ANSI colours — slightly lifted but still calm
+[colors.bright]
+black   = "#6272a4"
+red     = "#d49090"   # soft coral
+green   = "#b4ccae"   # light sage
+yellow  = "#ede0b4"   # light vanilla
+blue    = "#c0b0e8"   # brighter lavender
+magenta = "#d8baf0"   # light lavender-pink
+cyan    = "#aeccec"   # airy lavender-blue
+white   = "#f5f0e8"   # cream
+
+# Dim colours
+[colors.dim]
+black   = "#14151b"
+red     = "#9e5a5a"   # deep muted rose
+green   = "#6e8c69"   # deep sage
+yellow  = "#a89c6e"   # deep vanilla
+blue    = "#4d5b86"
+magenta = "#9b7ab8"   # dim lavender
+cyan    = "#6890ae"   # dim lavender-blue
+white   = "#c8c2b0"   # warm dim cream

@@ -1,0 +1,18 @@
+theme = "material_deep_ocean"
+
+[editor]
+mouse = true
+line-number = "absolute"
+auto-completion = true
+insert-final-newline = true
+atomic-save = true
+trim-trailing-whitespace = true
+trim-final-newlines = true
+end-of-line-diagnostics = "hint"
+auto-save = true
+
+[editor.indent-guides]
+render = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
