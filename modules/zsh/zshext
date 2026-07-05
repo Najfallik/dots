@@ -1,0 +1,83 @@
+# Completion
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+
+# Options
+setopt auto_cd
+setopt PROMPT_SUBST
+
+# Prompt
+local p_time="%F{8}%D{%H:%M}%f"
+local p_user="%B%F{15}%n%f%b"
+local p_at="%F{8}@%f"
+local p_host="%B%F{15}%m%f%b"
+local p_dir="%B%F{15}%~%f%b"
+local p_cursor="%(?.%B%F{15}.%B%F{8})∗%f%b"
+PROMPT="''${p_time} ''${p_user}''${p_at}''${p_host} ''${p_dir}
+''${p_cursor} "
+RPROMPT=""
+
+# Keybindings
+bindkey -e
+autoload -U select-word-style
+select-word-style bash
+bindkey '^H'       backward-kill-word
+bindkey '^[[3;5~'  kill-word
+bindkey '^[[1;5D'  backward-word
+bindkey '^[[1;5C'  forward-word
+bindkey '^[^?'     backward-kill-word
+bindkey '^[[C'     forward-char
+bindkey '^ '       autosuggest-accept
+
+export FZF_DEFAULT_OPTS="--border=none --prompt='❯ ' --pointer='▶' --marker='+'"
+
+# ── eza (ls replacements) ─────────────────────────────────────────
+alias ls='eza -al --color=always --group-directories-first --icons'
+alias la='eza -a  --color=always --group-directories-first --icons'
+alias ll='eza -l  --color=always --group-directories-first --icons'
+alias lt='eza -aT --color=always --group-directories-first --icons'
+alias l.='eza -a | grep -e "^\."'
+
+# ── NixOS system ──────────────────────────────────────────────────
+alias update='sudo nixos-rebuild switch --flake .#'
+alias update-boot='sudo nixos-rebuild boot --flake .#'
+alias update-test='sudo nixos-rebuild test --flake .#'
+alias cleanup='sudo nix-collect-garbage -d'
+alias cleanup-old='sudo nix-collect-garbage --delete-older-than 30d'
+alias flake-update='nix flake update'
+alias nixcheck='sudo nixos-rebuild dry-activate --flake .#'
+
+# ── Archive ───────────────────────────────────────────────────────
+alias tarnow='tar -acf'
+alias untar='tar -zxvf'
+
+# ── Utils ─────────────────────────────────────────────────────────
+alias wget='wget -c'
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+# ── Navigation ────────────────────────────────────────────────────
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+# ── Colourised tools ──────────────────────────────────────────────
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# ── Info ──────────────────────────────────────────────────────────
+alias hw='hwinfo --short'
+alias ff='fastfetch'
+
+# ── Convenience ───────────────────────────────────────────────────
+alias q='exit'
+alias please='sudo'
+
+# ── Fastfetch on login ────────────────────────────────────────────
+fastfetch
